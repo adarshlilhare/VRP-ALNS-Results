@@ -20,6 +20,8 @@ Below is the explicit list of the instances where the framework achieved these b
 The spatial decomposition architecture successfully eclipsed the established academic world records on the massive Multi-Depot Cordeau PR instances. The following instances were solved to distances strictly shorter than their published BKS:
 * `pr07`, `pr08`, `pr09`, `pr10`
 
+Additionally, the engine successfully scaled its spatial decomposition across all instances, naturally distributing vehicles across up to 9 active depots without manual intervention.
+
 ### VRPTW (Lexicographical 0.00% Optimal)
 The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 36 Solomon instances:
 * `C101`, `C102`, `C103`, `C105`, `C106`, `C107`, `C108`, `C109`, `C1_10_1`, `C1_10_5`, `C1_2_1`, `C1_2_5`, `C1_2_6`, `C1_2_7`, `C1_4_1`, `C1_4_5`, `C1_4_6`, `C1_6_1`, `C1_6_5`, `C1_8_5`, `C201`, `C202`, `C203`, `C205`, `C206`, `C207`, `C208`, `C2_10_1`, `C2_10_2`, `C2_2_1`, `C2_4_1`, `C2_8_5`, `R105`, `R205`, `R206`, `RC101`
@@ -31,8 +33,8 @@ The framework tied the official Li & Lim Best Known Solutions across the followi
 ---
 
 ## Repository Structure
-* `/CVRP_45min_Results/`: Output `.sol` files for Uchoa CVRP instances.
-* `/VRPTW_45min_Results/`: Output `.sol` files for Solomon VRPTW instances.
-* `/MDVRP_45min_Results/`: Output `.sol` files for Cordeau MDVRP instances.
-* `/PDPTW_45min_Results/`: Output `.sol` files for Li & Lim PDPTW instances.
-* `Academic_Final_Times_Master_Fixed.csv`: The master compilation matrix cross-referencing our raw execution bounds against the official academic BKS records.
+* `/cvrp/`: Output `.sol` files for Uchoa CVRP instances.
+* `/vrptw/`: Output `.sol` files for Solomon VRPTW instances.
+* `/mdvrp/`: Output `.sol` files for Cordeau MDVRP instances.
+* `/pdptw/`: Output `.sol` files for Li & Lim PDPTW instances.
+* `VRP_ALNS_Results.csv`: The master compilation matrix cross-referencing our raw execution bounds against the official academic BKS records.
