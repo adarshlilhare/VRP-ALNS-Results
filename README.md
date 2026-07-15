@@ -1,0 +1,38 @@
+# VRP-ALNS-Results: Unified Framework Logs
+
+This repository contains the raw computational output logs (`.sol` files) and execution times (`.csv`) for the unified Adaptive Large Neighborhood Search (ALNS) C++ framework presented in our IEEE TechRxiv preprint.
+
+To ensure full academic reproducibility, we have provided the evaluation traces for all **843 instances** across four major Vehicle Routing Problem (VRP) variants:
+* **CVRP**: Capacitated Vehicle Routing Problem (Uchoa X-Instances)
+* **VRPTW**: VRP with Time Windows (Solomon)
+* **MDVRP**: Multi-Depot VRP (Cordeau P/PR)
+* **PDPTW**: Pickup and Delivery Problem with Time Windows (Li & Lim)
+
+---
+
+## 🏆 Optimal and Record-Breaking Solutions
+
+While our IEEE preprint provides average computational gaps, the framework successfully converged to absolute lexicographical optimality (0.00% gap for both Vehicle Count and Distance) or mathematically broke the official academic Best Known Solutions (BKS) on several heavily constrained datasets.
+
+Below is the explicit list of the instances where the framework achieved these bounds under the strict 50-minute termination criterion.
+
+### MDVRP (World Record Breakers)
+The spatial decomposition architecture successfully eclipsed the established academic world records on the massive Multi-Depot Cordeau PR instances. The following instances were solved to distances strictly shorter than their published BKS:
+* `pr07`, `pr08`, `pr09`, `pr10`
+
+### VRPTW (Lexicographical 0.00% Optimal)
+The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 36 Solomon instances:
+* `C101`, `C102`, `C103`, `C105`, `C106`, `C107`, `C108`, `C109`, `C1_10_1`, `C1_10_5`, `C1_2_1`, `C1_2_5`, `C1_2_6`, `C1_2_7`, `C1_4_1`, `C1_4_5`, `C1_4_6`, `C1_6_1`, `C1_6_5`, `C1_8_5`, `C201`, `C202`, `C203`, `C205`, `C206`, `C207`, `C208`, `C2_10_1`, `C2_10_2`, `C2_2_1`, `C2_4_1`, `C2_8_5`, `R105`, `R205`, `R206`, `RC101`
+
+### PDPTW (Lexicographical 0.00% Optimal)
+The framework tied the official Li & Lim Best Known Solutions across the following 8 instances, ensuring precedence constraints and time-windows were flawlessly enforced:
+* `LC2_2_3`, `lr109`, `lr201`, `lr209`, `lrc107`, `lrc108`, `lrc204`, `lrc207`
+
+---
+
+## Repository Structure
+* `/CVRP_45min_Results/`: Output `.sol` files for Uchoa CVRP instances.
+* `/VRPTW_45min_Results/`: Output `.sol` files for Solomon VRPTW instances.
+* `/MDVRP_45min_Results/`: Output `.sol` files for Cordeau MDVRP instances.
+* `/PDPTW_45min_Results/`: Output `.sol` files for Li & Lim PDPTW instances.
+* `Academic_Final_Times_Master_Fixed.csv`: The master compilation matrix cross-referencing our raw execution bounds against the official academic BKS records.
