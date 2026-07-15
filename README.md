@@ -23,7 +23,7 @@ The spatial decomposition architecture successfully eclipsed the established aca
 Additionally, the engine successfully scaled its spatial decomposition across all instances, naturally distributing vehicles across up to 9 active depots without manual intervention.
 
 ### VRPTW (Lexicographical 0.00% Optimal)
-The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 36 Solomon instances:
+The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 36 instances:
 * `C101`, `C102`, `C103`, `C105`, `C106`, `C107`, `C108`, `C109`, `C1_10_1`, `C1_10_5`, `C1_2_1`, `C1_2_5`, `C1_2_6`, `C1_2_7`, `C1_4_1`, `C1_4_5`, `C1_4_6`, `C1_6_1`, `C1_6_5`, `C1_8_5`, `C201`, `C202`, `C203`, `C205`, `C206`, `C207`, `C208`, `C2_10_1`, `C2_10_2`, `C2_2_1`, `C2_4_1`, `C2_8_5`, `R105`, `R205`, `R206`, `RC101`
 
 ### PDPTW (Lexicographical 0.00% Optimal)
