@@ -33,6 +33,11 @@ The framework tied the official Li & Lim Best Known Solutions across the followi
 ---
 
 ## Repository Structure
+
+* `CVRP_Final_Results.csv`: Mathematically verified gap analysis and execution times for CVRP.
+* `VRPTW_Final_Results.csv`: Mathematically verified gap analysis and execution times for VRPTW.
+* `MDVRP_Final_Results.csv`: Mathematically verified gap analysis and execution times for MDVRP.
+* `PDPTW_Final_Results.csv`: Mathematically verified gap analysis and execution times for PDPTW.
 * `/cvrp/`: Output `.sol` files for Uchoa CVRP instances.
 * `/vrptw/`: Output `.sol` files for Solomon VRPTW instances.
 * `/mdvrp/`: Output `.sol` files for Cordeau MDVRP instances.
