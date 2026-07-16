@@ -10,7 +10,7 @@ To ensure full academic reproducibility, we have provided the evaluation traces 
 
 ---
 
-## 🏆 Optimal and Record-Breaking Solutions
+## 🏆 Optimal and Tied Solutions
 
 While our IEEE preprint provides average computational gaps, the framework successfully converged to absolute lexicographical optimality (0.00% gap for both Vehicle Count and Distance) or mathematically broke the official academic Best Known Solutions (BKS) on several heavily constrained datasets.
 
