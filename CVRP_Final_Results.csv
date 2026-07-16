@@ -1,4 +1,4 @@
-Instance,Our_Vehicles,BKS_Vehicles,Vehicle_Gap(%),Our_Distance,BKS_Distance,Distance_Gap(%),Time
+Instance,Our_Vehicles,BKS_Vehicles,Vehicle_Gap(%),Our_Distance,BKS_Distance,Distance_Gap(%),Time(s)
 X-n1001-k43.sol,43,43.0,0.0,78368.0,72346.0,8.323887982749564,2714.8
 X-n101-k25.sol,26,25.0,4.0,27756.0,27591.0,0.5980210938349462,2700.18
 X-n106-k14.sol,14,14.0,0.0,26607.0,26362.0,0.929368029739777,2700.18

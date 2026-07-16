@@ -1,4 +1,4 @@
-Instance,Our_Vehicles,BKS_Vehicles,Vehicle_Gap(%),Our_Distance,BKS_Distance,Distance_Gap(%),Time
+Instance,Our_Vehicles,BKS_Vehicles,Vehicle_Gap(%),Our_Distance,BKS_Distance,Distance_Gap(%),Time(s)
 LC1_10_10.sol,101,86.0,17.441860465116278,48750.61,42929.15,13.560622560660992,3193.4
 LC1_10_2.sol,103,94.0,9.574468085106384,46217.97,44548.51,3.747510298324229,3114.16
 LC1_10_3.sol,97,78.0,24.35897435897436,46724.92,45906.3,1.783241080200311,3274.14
