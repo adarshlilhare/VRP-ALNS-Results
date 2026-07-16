@@ -37,4 +37,4 @@ The framework tied the official Li & Lim Best Known Solutions across the followi
 * `/vrptw/`: Output `.sol` files for Solomon VRPTW instances.
 * `/mdvrp/`: Output `.sol` files for Cordeau MDVRP instances.
 * `/pdptw/`: Output `.sol` files for Li & Lim PDPTW instances.
-* `VRP_ALNS_Results.csv`: The master compilation matrix cross-referencing our raw execution bounds against the official academic BKS records.
+
