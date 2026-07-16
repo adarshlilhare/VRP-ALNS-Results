@@ -16,11 +16,7 @@ While our IEEE preprint provides average computational gaps, the framework succe
 
 Below is the explicit list of the instances where the framework achieved these bounds under the strict 50-minute termination criterion.
 
-### MDVRP (World Record Breakers)
-The spatial decomposition architecture successfully eclipsed the established academic world records on the massive Multi-Depot Cordeau PR instances. The following instances were solved to distances strictly shorter than their published BKS:
-* `pr07`, `pr08`, `pr09`, `pr10`
 
-Additionally, the engine successfully scaled its spatial decomposition across all instances, naturally distributing vehicles across up to 9 active depots without manual intervention.
 
 ### VRPTW (Lexicographical 0.00% Optimal)
 The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 25 instances:
