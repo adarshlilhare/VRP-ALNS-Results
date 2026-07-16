@@ -23,12 +23,12 @@ The spatial decomposition architecture successfully eclipsed the established aca
 Additionally, the engine successfully scaled its spatial decomposition across all instances, naturally distributing vehicles across up to 9 active depots without manual intervention.
 
 ### VRPTW (Lexicographical 0.00% Optimal)
-The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 36 instances:
-* `C101`, `C102`, `C103`, `C105`, `C106`, `C107`, `C108`, `C109`, `C1_10_1`, `C1_10_5`, `C1_2_1`, `C1_2_5`, `C1_2_6`, `C1_2_7`, `C1_4_1`, `C1_4_5`, `C1_4_6`, `C1_6_1`, `C1_6_5`, `C1_8_5`, `C201`, `C202`, `C203`, `C205`, `C206`, `C207`, `C208`, `C2_10_1`, `C2_10_2`, `C2_2_1`, `C2_4_1`, `C2_8_5`, `R105`, `R205`, `R206`, `RC101`
+The framework mathematically tied the official Best Known Solutions for both Fleet Size and Distance across the following 25 instances:
+* `C101`, `C102`, `C103`, `C105`, `C106`, `C107`, `C108`, `C109`, `C1_2_1`, `C1_2_5`, `C1_2_6`, `C1_2_7`, `C1_6_1`, `C1_6_5`, `C1_8_5`, `C201`, `C202`, `C203`, `C205`, `C206`, `C207`, `C208`, `C2_2_1`, `R105`, `R206`
 
 ### PDPTW (Lexicographical 0.00% Optimal)
-The framework tied the official Li & Lim Best Known Solutions across the following 8 instances, ensuring precedence constraints and time-windows were flawlessly enforced:
-* `LC2_2_3`, `lr109`, `lr201`, `lr209`, `lrc107`, `lrc108`, `lrc204`, `lrc207`
+The framework tied the official Li & Lim Best Known Solutions across the following 39 instances, ensuring precedence constraints and time-windows were flawlessly enforced:
+* `LC2_2_10`, `LC2_2_2`, `LC2_2_3`, `LC2_2_5`, `lc101`, `lc102`, `lc105`, `lc106`, `lc107`, `lc108`, `lc201`, `lc202`, `lc205`, `lc206`, `lc207`, `lc208`, `lr101`, `lr102`, `lr103`, `lr105`, `lr106`, `lr107`, `lr108`, `lr109`, `lr111`, `lr112`, `lr201`, `lr205`, `lr206`, `lr208`, `lr209`, `lrc101`, `lrc103`, `lrc104`, `lrc105`, `lrc107`, `lrc108`, `lrc204`, `lrc207`
 
 ---
 
