@@ -38,4 +38,4 @@ The framework tied the official Li & Lim Best Known Solutions across the followi
 * `/vrptw/`: Output `.sol` files for Solomon VRPTW instances.
 * `/mdvrp/`: Output `.sol` files for Cordeau MDVRP instances.
 * `/pdptw/`: Output `.sol` files for Li & Lim PDPTW instances.
-
+* `/src/`: Core C++ source code engines and Python benchmarking orchestrator for reproducing all computational results.
