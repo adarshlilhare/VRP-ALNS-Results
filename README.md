@@ -1,8 +1,8 @@
-# VRP-ALNS-Results: Unified Framework Logs
+# VRP-ALNS-Results: Unified Framework Source Code and Logs
 
-This repository contains the raw computational output logs (`.sol` files) and execution times (`.csv`) for the unified Adaptive Large Neighborhood Search (ALNS) C++ framework presented in our IEEE TechRxiv preprint.
+This repository contains the core C++ source code engines, Python benchmarking orchestrator, raw computational output logs (`.sol` files), and execution times (`.csv`) for the unified Adaptive Large Neighborhood Search (ALNS) C++ framework presented in our IEEE TechRxiv preprint.
 
-To ensure full academic reproducibility, we have provided the evaluation traces for all **843 instances** across four major Vehicle Routing Problem (VRP) variants:
+To ensure full academic reproducibility, we have open-sourced the algorithmic engines and provided the evaluation traces for all **843 instances** across four major Vehicle Routing Problem (VRP) variants:
 * **CVRP**: Capacitated Vehicle Routing Problem (Uchoa X-Instances)
 * **VRPTW**: VRP with Time Windows (Solomon)
 * **MDVRP**: Multi-Depot VRP (Cordeau P/PR)
