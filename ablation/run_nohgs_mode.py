@@ -2,12 +2,24 @@ import os
 import subprocess
 import time
 
-DATA_DIR = r"D:\businessss\VRPTWController-master\Instances"
-ENGINE = r"D:\businessss\vrptw_no_hgs.exe"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
+
+# Resolve directories (environment variable override or local/repo defaults)
+DATA_DIR = os.environ.get("VRPTW_INSTANCES", r"D:\businessss\VRPTWController-master\Instances")
+if not os.path.exists(DATA_DIR):
+    DATA_DIR = os.path.join(REPO_ROOT, "instances")
+
+ENGINE = os.environ.get("VRPTW_NO_HGS_ENGINE", r"D:\businessss\vrptw_no_hgs.exe")
+if not os.path.exists(ENGINE):
+    ENGINE = os.path.join(REPO_ROOT, "vrptw_no_hgs")
+    if os.name == 'nt' and not os.path.exists(ENGINE) and os.path.exists(ENGINE + ".exe"):
+        ENGINE = ENGINE + ".exe"
+
 TIMEOUT_SEC = 45 # Sub-minute time limit for No-HGS Ablation
 THREADS = "12"
-OUT_CSV = r"D:\businessss\NoHGS_Ablation_Results.csv"
-OUT_LOG_DIR = r"D:\businessss\NoHGS_Ablation_Logs"
+OUT_CSV = os.path.join(SCRIPT_DIR, "NoHGS_Ablation_Results.csv")
+OUT_LOG_DIR = os.path.join(SCRIPT_DIR, "NoHGS_Ablation_Logs")
 
 if not os.path.exists(OUT_LOG_DIR):
     os.makedirs(OUT_LOG_DIR)

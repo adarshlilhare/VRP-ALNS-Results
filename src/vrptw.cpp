@@ -995,6 +995,7 @@ int main(int argc, char* argv[]) {
                 }
             }
             
+#ifndef DISABLE_HGS
             // HGS Genetic Crossover
             iter_count++;
             if (iter_count % 100 == 0) {
@@ -1093,6 +1094,7 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
+#endif
         }
     }
 

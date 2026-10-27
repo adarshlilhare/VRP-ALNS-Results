@@ -100,6 +100,9 @@ g++ -O3 -fopenmp -std=c++17 src/vrptw.cpp -o vrptw
 g++ -O3 -fopenmp -std=c++17 src/cvrp.cpp -o cvrp
 g++ -O3 -fopenmp -std=c++17 src/mdvrp.cpp -o mdvrp
 g++ -O3 -fopenmp -std=c++17 src/pdptw.cpp -o pdptw
+
+# Compile No-HGS Mode (Pure ALNS for Ablation)
+g++ -O3 -fopenmp -std=c++17 -DDISABLE_HGS src/vrptw.cpp -o vrptw_no_hgs
 ```
 
 ### Windows / MSVC:
@@ -108,6 +111,9 @@ cl /O2 /openmp /std:c++17 src\vrptw.cpp
 cl /O2 /openmp /std:c++17 src\cvrp.cpp
 cl /O2 /openmp /std:c++17 src\mdvrp.cpp
 cl /O2 /openmp /std:c++17 src\pdptw.cpp
+
+# Compile No-HGS Mode (Pure ALNS for Ablation)
+cl /O2 /openmp /std:c++17 /DDISABLE_HGS src\vrptw.cpp /Fe:vrptw_no_hgs.exe
 ```
 
 ### Running Benchmark Suites:
